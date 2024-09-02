@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YopekUtox</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <canvas>
+            </canvas>
+        </header>
+
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+        <div id="in_background">
+            <img src="avatar.png" alt="Avatar" class="avatar">
+            <h1 id="name_text">YopekUtox</h1>
+            <h2 id="background_text">Life is but a brief flash in the nothingness</h2>
+        </div>
+        
+        <div id="down_info">
+            <script>
+                particlesJS("down_info", {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 236.74802907265777
+                            }
+                        },
+                        "color": {
+                            "value": "#000000"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            },
+                            "image": {
+                                "src": "img/github.svg",
+                                "width": 100,
+                                "height": 100
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.3156640387635437,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#000000",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 3.156640387635437,
+                            "direction": "left",
+                            "random": true,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "onclick": {
+                                "enable": false,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 347.63012155066997,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 347.63012155066997,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 95.89796456570205,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+
+                update = function() {
+                    stats.begin();
+                    stats.end();
+                    if (window.pJSDom[0] && window.pJSDom[0].pJS && window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+                    }
+                    requestAnimationFrame(update);
+                };
+                requestAnimationFrame(update);
+            </script>
+
+            <div id="center_text">
+                <h1 style="font-family: New Amsterdam, sans-serif; color: white; text-align: center; font-size: 50px; letter-spacing: .07em;">About me</h1>
+                <h3 style="font-family: Dosis, sans-serif; color: rgb(124, 0, 0); text-align: left; font-size: 20px; padding: 20px;">
+                    I'm a programmer/coder with a passion for cybersecurity, a rotation in the crypto market (also generally entrepreneurship) and a passion for psychology.
+                </h3>
+                <p style="text-align: left; color: white; padding: 20px; font-family: Lucida Sans Unicode; font-size: 10px;">
+                    In fact, I mainly engage in programming as a hobby, as well as (not primarily) professionally/occasionally, driven by passion and a desire for development. I enjoy automating various processes, including using arduino, raspberry pi, and write pentesting tools that sometimes use various exploits. This is connected with cybersecurity, which I have been passionate about since my teenage years. I have completed many courses in this field and have applied the knowledge gained from these courses and from others in the industry many times in practice and continue to do so. The cryptocurrency market is not foreign to me, and I have been involved in it for several years. I own "X" cryptocurrencies, mainly mainstream ones like bitcoin, as well as some altcoins for the long term and generally as part of my savings. In the field of psychology/sociology, I have been developing and continue to develop, believing that it is key to understanding the environment around us and the individuals within it. This understanding allows for "managing matters in a way that ensures final benefits are favorable. In addition to English, I also speak German due to my place of residence and a bit of French, as well some Russian. 
+                </p>
+            </div>
+
+            <div id="contact_text">
+                <h1 style="font-family: New Amsterdam, sans-serif; color: white; text-align: center; font-size: 50px; letter-spacing: .07em;">Contact/Profiles</h1>
+                <br>
+                <div id="images">
+                    <a href="https://steamcommunity.com/id/yopek_utox/" target="_blank">
+                        <img src="steam-icon.png" alt="Steam Icon" id="steam">
+                    </a>
+                    <img src="discord-round-black-icon.png" alt="Discord Icon" id="discord">
+                    <img src="telegram-black-icon.png" alt="Telegram Icon" id="telegram">
+                    <a href="https://github.com/YopekUtox" target="_blank">
+                        <img src="github-icon.png" alt="GitHub Icon" id="github">
+                    </a>
+                </div>
+
+                <br><br><br>
+
+                <p style="text-align: center; font-family: Dosis, sans-serif; color: rgb(124, 0, 0)"><strong>I don't always accept invites!</strong></p>
+            </div>
+
+            <div id="right_down_box">
+                <h1 style="font-family: New Amsterdam, sans-serif; color: white; text-align: center; font-size: 50px; letter-spacing: .07em;">Skills</h1>
+
+                <div id="skill-frontend" class="skill-container">
+                    <p style="font-family: Dosis, sans-serif; text-align: center; color: white;">FRONT-END: <img src = 'html.png' style='vertical-align: middle; width: 40px; height: 40px;'> <img src = 'css.png' style='vertical-align: middle; width: 32px; height: 30px;'> <img src = 'js.png' style='vertical-align: middle; width: 42px; height: 40px;'></p>
+                    <div class="container" style="margin: auto;">
+                        <div class="skill frontend" style="background-color: rgb(128, 110, 53);">40%</div>
+                    </div>
+                </div>
+
+                <div id="skill-backend" class="skill-container hidden">
+                    <p style="font-family: Dosis, sans-serif; text-align: center; color: white;">BACK-END: <img src = 'php.png' style='vertical-align: middle; width: 42px; height: 40px;'></p>
+                    <div class="container" style="margin: auto;">
+                        <div class="skill backend" style="background-color: rgb(95, 79, 170);">72%</div>
+                    </div>
+                </div>
+
+                <div id="skill-python" class="skill-container hidden">
+                    <p style="font-family: Dosis, sans-serif; text-align: center; color: white;">PYTHON: <img src = 'python.png' style='vertical-align: middle; width: 42px; height: 40px;'></p>
+                    <div class="container" style="margin: auto;">
+                        <div class="skill python" style="background-color: rgb(59, 137, 226);">67%</div>
+                    </div>
+                </div>
+
+                <div id="skill-ruby" class="skill-container hidden">
+                    <p style="font-family: Dosis, sans-serif; text-align: center; color: white;">RUBY: <img src = 'ruby.png' style='vertical-align: middle; width: 32px; height: 40px;'></p>
+                    <div class="container" style="margin: auto;">
+                        <div class="skill ruby" style="background-color: rgb(223, 75, 75);">30%</div>
+                    </div>
+                </div>
+
+                <div id="skill-cpp" class="skill-container hidden">
+                    <p style="font-family: Dosis, sans-serif; text-align: center; color: white;">CPP: <img src = 'cpp.png' style='vertical-align: middle; width: 39px; height: 40px;'></p>
+                    <div class="container" style="margin: auto;">
+                        <div class="skill cpp" style="background-color: rgb(104, 185, 240);">48%</div>
+                    </div>
+                </div>
+
+                <br>
+                
+                <p style="text-align: center; font-family: Dosis, sans-serif; color: rgb(124, 0, 0)"><strong>Subjective opinion & supported by feedback from people more knowledgeable on the topics</strong></p>
+                <p style="text-align: center; font-family: Dosis, sans-serif; color: rgb(124, 0, 0)"><strong>Put in general terms</strong></p>
+
+                <script>
+                    const skills = ["skill-frontend", "skill-backend", "skill-python", "skill-ruby", "skill-cpp"];
+                    let currentSkillIndex = 0;
+            
+                    function showNextSkill() {
+
+                        document.getElementById(skills[currentSkillIndex]).classList.add("hidden");                 
+                        currentSkillIndex = (currentSkillIndex + 1) % skills.length;        
+                        document.getElementById(skills[currentSkillIndex]).classList.remove("hidden");
+                    }
+                    setInterval(showNextSkill, 5000);
+                </script>
+
+            </div>
+            
+        </div>
+    </body>
+
+    <script>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js</script>
+
+    <script>
+        // Initialising the canvas
+        var canvas = document.querySelector('canvas'),
+            ctx = canvas.getContext('2d');
+
+            function resizeCanvas() {
+            var header = document.querySelector('header');
+            canvas.width = header.clientWidth;
+            canvas.height = header.clientHeight;
+        }
+
+        resizeCanvas();
+
+        window.addEventListener('resize', resizeCanvas);
+
+        // Setting up the letters
+        var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
+        letters = letters.split('');
+
+        // Setting up the columns
+        var fontSize = 10,
+            columns = canvas.width / fontSize;
+
+        // Setting up the drops
+        var drops = [];
+        for (var i = 0; i < columns; i++) {
+        drops[i] = 1;
+        }
+
+        // Setting up the draw function
+        function draw() {
+        ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < drops.length; i++) {
+            var text = letters[Math.floor(Math.random() * letters.length)];
+            ctx.fillStyle = '#610101';
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+            drops[i]++;
+            if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
+            drops[i] = 0;
+            }
+        }
+        }
+
+        // Loop the animation
+        setInterval(draw, 33);
+    </script>
+
+    <script>
+        function showDiscord() {
+            alertbox.render({
+                alertIcon: '',
+                title: 'yopekutox#0',
+                themeColor: '#000000',
+                btnTitle: 'Ok',
+                btnColor: '#727272',
+                btnColor: true
+            });
+        }
+
+        document.getElementById('discord').addEventListener('click', showDiscord);
+    </script>
+
+    <script>
+        function showTelegram() {
+            alertbox.render({
+                alertIcon: '',
+                title: 'Maybe....thats too many',
+                themeColor: '#000000',
+                btnTitle: 'Ok',
+                btnColor: '#727272',
+                btnColor: true
+            });
+        }
+
+        document.getElementById('telegram').addEventListener('click', showTelegram);
+    </script>
+
+</html>

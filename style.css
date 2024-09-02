@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaini&family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=New+Amsterdam&display=swap');
+
+
+html, body {margin: 0; padding: 0; height: 100%; background-color: #333;}
+
+header {width: 100%; height: 85%; background-color: #333; color: white;}
+
+#in_background{
+  position:absolute;
+  top: 520px;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;  
+  top: 35%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+}
+
+#name_text{
+  color: rgba(255, 0, 0, 0.767);
+  text-align: center;
+  font-size: 80px;
+  font-family: "Jaini", system-ui;
+}
+
+#down_info {
+  background-color: rgb(37, 37, 37);
+  border-top: 2px solid rgb(109, 0, 0); 
+  height: 900px;
+  padding: 20px;
+  position: relative;
+
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: table;
+  margin: 0 auto;
+  border: 4px solid #da0000;
+}
+
+#background_text{
+  font-family: "Jersey 10", sans-serif;
+  color: rgba(255, 12, 12, 0.781);
+  text-align: center;
+  overflow: hidden; 
+  border-right: .15em solid rgb(121, 0, 0);
+  white-space: nowrap; 
+  letter-spacing: .07em; 
+  animation: 
+    typing 3.5s steps(60, end),
+    blink-caret .2s step-end infinite;
+}
+
+#center_text{
+  background-color: #111111;
+  height: 50%;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  z-index: 6;
+}
+
+#contact_text{
+  background-color: #111111;
+  height: 35%;
+  width: 35%;
+  float: left;
+  margin-top: 70px;
+  position: relative;
+  z-index: 10;
+
+}
+
+#right_down_box{
+  background-color: #111111;
+  height: 35%;
+  width: 35%;
+  float: right;
+  margin-top: 70px;
+  position: relative;
+  z-index: 10;
+
+}
+
+.container {
+  background-color: rgb(117, 117, 117);
+  width: 80%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.frontend {width: 40%;}
+
+.backend {width: 72%;}
+
+.python {width: 67%;}
+
+.ruby {width: 30%;}
+
+.cpp {width: 48%;}
+
+.hidden {display: none;}
+
+
+#images {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 70px; 
+  margin: 0 auto; 
+  transition: transform 2s; 
+  transform: scale(1); 
+}
+
+#images img {
+  width: 50px; 
+  height: 50px; 
+}
+
+#images:hover{
+  transition-duration: 1s;
+  transform: scale(1.2);
+}
+
+
+
+.avatar:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+} 
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#steam{transition: transform 0.5s;}
+
+#steam:hover {transform: rotate(-10deg);}
+
+#discord{transition: transform 0.5s;}
+
+#discord:hover {transform: rotate(-10deg);}
+
+#telegram{transition: transform 0.5s;}
+
+#telegram:hover {transform: rotate(10deg);}
+
+#github{transition: transform 0.5s;}
+
+#github:hover {transform: rotate(10deg);}
+
+hr{color: #da0000; background-color: #da0000;}
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(141, 0, 0) }
+}
+
+#down_info canvas {position: absolute; top: 0; left: -10px; z-index: 6;}
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 0 0 3px 3px;
+}
+
+.js-count-particles {font-size: 1.1em;}
